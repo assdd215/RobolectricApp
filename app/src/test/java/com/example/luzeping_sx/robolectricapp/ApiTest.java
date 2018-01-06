@@ -40,7 +40,6 @@ public class ApiTest {
                 .build();
 
         retrofitService = retrofit.create(RetrofitService.class);
-
     }
 
     @Test

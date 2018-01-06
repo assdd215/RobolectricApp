@@ -18,8 +18,6 @@ public class MyService extends IntentService{
         super(name);
     }
 
-
-
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
         SharedPreferences.Editor editor = getApplicationContext().getSharedPreferences("SERVICE",MODE_PRIVATE).edit();

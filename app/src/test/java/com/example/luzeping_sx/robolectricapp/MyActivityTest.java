@@ -33,14 +33,13 @@ import static org.junit.Assert.assertTrue;
  */
 
 @RunWith(RobolectricTestRunner.class)
-@Config(constants = BuildConfig.class)
+@Config(manifest = Config.NONE)
 public class MyActivityTest {
 
     MyActivity mMyctivity;
     TextView mTextView;
     Button mButton;
     ActivityController<MyActivity> mActivityController;
-
 
 
     @Before
@@ -54,6 +53,7 @@ public class MyActivityTest {
 
     @Test
     public void TestLifeCycle(){
+
         assertEquals("onCreate",mTextView.getText());
         mActivityController.start();
         assertEquals("onStart",mTextView.getText());

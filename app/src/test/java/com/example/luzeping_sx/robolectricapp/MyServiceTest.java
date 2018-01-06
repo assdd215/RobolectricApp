@@ -26,7 +26,8 @@ public class MyServiceTest {
         Application application = RuntimeEnvironment.application;
         MyService myService = Robolectric.setupIntentService(MyService.class);
         myService.onHandleIntent(new Intent());
-        SharedPreferences preferences = application.getSharedPreferences("SERVICE", Context.MODE_PRIVATE);
+        SharedPreferences preferences = application
+                .getSharedPreferences("SERVICE", Context.MODE_PRIVATE);
         assertEquals(preferences.getString("data",""),"serviceData");
     }
 }

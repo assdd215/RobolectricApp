@@ -35,5 +35,6 @@ public class MyReceiverTest {
         SharedPreferences preferences = shadowApplication.getApplicationContext()
                 .getSharedPreferences("TEST", Context.MODE_PRIVATE);
         assertEquals("myData",preferences.getString("data",""));
+
     }
 }
