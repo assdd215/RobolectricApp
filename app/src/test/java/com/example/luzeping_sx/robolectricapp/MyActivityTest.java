@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import com.example.luzeping_sx.robolectricapp.robolectric.MyRoboRunner;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,7 +34,7 @@ import static org.junit.Assert.assertTrue;
  * Created by aria on 2018/1/4.
  */
 
-@RunWith(RobolectricTestRunner.class)
+@RunWith(MyRoboRunner.class)
 @Config(manifest = Config.NONE)
 public class MyActivityTest {
 
